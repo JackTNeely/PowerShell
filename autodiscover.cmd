@@ -1,6 +1,6 @@
-#@echo off
-#PowerShell -Command "Get-Content '%~dpnx0' | Select-Object -Skip 3 | Out-String | Invoke-Expression"
-#goto :eof
+@echo off
+PowerShell -Command "Get-Content '%~dpnx0' | Select-Object -Skip 3 | Out-String | Invoke-Expression"
+goto :eof
 Write-Host "`r`n`r`nWhat is your email address?" -ForegroundColor Cyan
 $domain = (Read-Host).Split("@")[1]
 
