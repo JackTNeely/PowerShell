@@ -119,7 +119,7 @@ Write-Host "`r`nPress enter to exit." -ForegroundColor Magenta
 <br />
 
 <div align="center">
-<img src="https://lh3.googleusercontent.com/un87V2kkHHTlXhk6KwKgKygUCrtTzr4L-ikNGoCc5YZUIuBIKzQJ95o-70sTVKmcIQPCG6mBYBkHfLkrkeGp_Brli001wgi2wB-iNWhQa8yFHCb1e97a9eG-S8IKyWBm8Q_pszMfKPY=w600-h315-p-k" />
+<a href="https://lh3.googleusercontent.com/un87V2kkHHTlXhk6KwKgKygUCrtTzr4L-ikNGoCc5YZUIuBIKzQJ95o-70sTVKmcIQPCG6mBYBkHfLkrkeGp_Brli001wgi2wB-iNWhQa8yFHCb1e97a9eG-S8IKyWBm8Q_pszMfKPY=w2400?source=screenshot.guru" target="_blank"><img src="https://lh3.googleusercontent.com/un87V2kkHHTlXhk6KwKgKygUCrtTzr4L-ikNGoCc5YZUIuBIKzQJ95o-70sTVKmcIQPCG6mBYBkHfLkrkeGp_Brli001wgi2wB-iNWhQa8yFHCb1e97a9eG-S8IKyWBm8Q_pszMfKPY=w2400?source=screenshot.guru" />
 </div>
 
 
