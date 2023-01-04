@@ -1,6 +1,67 @@
 # PowerShell
 PowerShell, Remote Administration, Microsoft, Office, 365, Azure, Azure Active Directory, Bulk Scripting, Automation
 
+<br />
+
+<div align="center">
+  <h2>Sort HubSpot Leads List (CSV file) by Users@Domains using Microsoft 365 and Export to a New CSV</h2>
+</div>
+
+<pre>
+Write-Host "`r`n`r`n`r`n`r`nWhat is the full path for your file? `r`nE.g. C:\leads.csv" -ForegroundColor Magenta
+$path = Read-Host -Prompt "Path"
+
+$leads = Import-Csv -Path $path -Header "Record ID","First Name","Last Name","Email","Office Number","Primary Associated Company ID","Associated Company","Record ID - Company","Company name","Cell Number","City","Industry"
+$count = $leads.count
+$results = @()
+
+Write-Host "`r`n`r`nProcessing . . . Do not exit." -ForegroundColor Magenta
+Write-Host "This could take some time. Have a coffee. Maybe a few." -ForegroundColor Cyan
+Start-Sleep -Seconds 3
+
+$i = 0
+
+foreach ($lead in $leads) {
+
+    $domain = ($lead.Email).Split("@")[1]
+    $autodiscover = Resolve-DnsName -Name autodiscover.$domain -Type CNAME -DnsOnly -QuickTimeout -ErrorAction SilentlyContinue
+    $i++
+
+    if ($autodiscover.NameHost -eq "autodiscover.outlook.com") {
+        $results += $lead
+
+        #Write-Host $domain -ForegroundColor Cyan
+        #Write-Host $lead.Email -ForegroundColor Cyan
+        #Write-Host $autodiscover.NameHost "`r`n"
+        #Write-Host $results | ft
+
+    } else {}
+
+    Write-Host "$i out of $count"
+}
+
+$results | Export-Csv -Path C:\M365_Leads.csv -NoTypeInformation
+Write-Host "`r`n`r`n`r`n`r`nScript complete!" -ForegroundColor Magenta
+Write-Host "Results output to C:\M365_Leads.csv" -ForegroundColor Cyan
+Write-Host "`r`nPress enter to exit." -ForegroundColor Magenta
+</pre>
+
+<br />
+<br />
+
+<div align="center">
+<a href="https://lh3.googleusercontent.com/un87V2kkHHTlXhk6KwKgKygUCrtTzr4L-ikNGoCc5YZUIuBIKzQJ95o-70sTVKmcIQPCG6mBYBkHfLkrkeGp_Brli001wgi2wB-iNWhQa8yFHCb1e97a9eG-S8IKyWBm8Q_pszMfKPY=w2400?source=screenshot.guru" target="_blank"><img src="https://lh3.googleusercontent.com/un87V2kkHHTlXhk6KwKgKygUCrtTzr4L-ikNGoCc5YZUIuBIKzQJ95o-70sTVKmcIQPCG6mBYBkHfLkrkeGp_Brli001wgi2wB-iNWhQa8yFHCb1e97a9eG-S8IKyWBm8Q_pszMfKPY=w2400?source=screenshot.guru" />
+</div>
+
+<br />
+<br />
+<br />
+    
+  
+<div align="center">
+  <h2>Break/Fix Local Outlook Autodiscover Malfunction by Validating DNS and Modifying Machine Registry</h2>
+</div>
+<br />
 - <b>Validate CNAME autodisocver record, modify client registry, and repair Outlook autodiscover based on type of Exchange services (using email address as input).</b>
 <br />Note: This PowerShell script gets passed into cmd, allowing a seamless click-to-run user experience. 
 
@@ -69,66 +130,15 @@ if ($dS) {
 Write-Host "`r`n`r`n`r`n`r`nPress enter to exit.`r`n`r`n`r`n" -ForegroundColor Magenta
 Read-Host
 </pre>
-
+  
+  
 <br />
-<br />
-<br />
-
-- <b>Sort HubSpot Leads List (CSV file) by Users@Domains using Microsoft 365 and Export to a New CSV</b>
-
-<pre>
-Write-Host "`r`n`r`n`r`n`r`nWhat is the full path for your file? `r`nE.g. C:\leads.csv" -ForegroundColor Magenta
-$path = Read-Host -Prompt "Path"
-
-$leads = Import-Csv -Path $path -Header "Record ID","First Name","Last Name","Email","Office Number","Primary Associated Company ID","Associated Company","Record ID - Company","Company name","Cell Number","City","Industry"
-$count = $leads.count
-$results = @()
-
-Write-Host "`r`n`r`nProcessing . . . Do not exit." -ForegroundColor Magenta
-Write-Host "This could take some time. Have a coffee. Maybe a few." -ForegroundColor Cyan
-Start-Sleep -Seconds 3
-
-$i = 0
-
-foreach ($lead in $leads) {
-
-    $domain = ($lead.Email).Split("@")[1]
-    $autodiscover = Resolve-DnsName -Name autodiscover.$domain -Type CNAME -DnsOnly -QuickTimeout -ErrorAction SilentlyContinue
-    $i++
-
-    if ($autodiscover.NameHost -eq "autodiscover.outlook.com") {
-        $results += $lead
-
-        #Write-Host $domain -ForegroundColor Cyan
-        #Write-Host $lead.Email -ForegroundColor Cyan
-        #Write-Host $autodiscover.NameHost "`r`n"
-        #Write-Host $results | ft
-
-    } else {}
-
-    Write-Host "$i out of $count"
-}
-
-$results | Export-Csv -Path C:\M365_Leads.csv -NoTypeInformation
-Write-Host "`r`n`r`n`r`n`r`nScript complete!" -ForegroundColor Magenta
-Write-Host "Results output to C:\M365_Leads.csv" -ForegroundColor Cyan
-Write-Host "`r`nPress enter to exit." -ForegroundColor Magenta
-</pre>
-
 <br />
 <br />
 
 <div align="center">
-<a href="https://lh3.googleusercontent.com/un87V2kkHHTlXhk6KwKgKygUCrtTzr4L-ikNGoCc5YZUIuBIKzQJ95o-70sTVKmcIQPCG6mBYBkHfLkrkeGp_Brli001wgi2wB-iNWhQa8yFHCb1e97a9eG-S8IKyWBm8Q_pszMfKPY=w2400?source=screenshot.guru" target="_blank"><img src="https://lh3.googleusercontent.com/un87V2kkHHTlXhk6KwKgKygUCrtTzr4L-ikNGoCc5YZUIuBIKzQJ95o-70sTVKmcIQPCG6mBYBkHfLkrkeGp_Brli001wgi2wB-iNWhQa8yFHCb1e97a9eG-S8IKyWBm8Q_pszMfKPY=w2400?source=screenshot.guru" />
+<h2>Bulk Remove Automapping for All Users</h2>
 </div>
-
-
-<br />
-<br />
-<br />
-
-
-- <b>Bulk Remove Automapping for All Users</b>
   
 <pre>  
 $objUsers = Get-Mailbox -Resultsize Unlimited
