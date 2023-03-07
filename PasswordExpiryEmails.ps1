@@ -1,3 +1,6 @@
+# For use with PasswordExpiryEmails.ps1
+# To be deployed as an Azure Function
+
 # Get the client ID of the managed identity for the Function app
 $clientId = (Get-AzWebApp -ResourceGroupName $env:ResourceGroupName -Name $env:FunctionAppName).Identity.PrincipalId
 
