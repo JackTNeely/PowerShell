@@ -13,3 +13,325 @@ ForEach ($Certificate in $Certificates) {
     $Cert.Import($CertBytes, $Password, [System.Security.Cryptography.X509Certificates.X509KeyStorageFlags]::Exportable)
     [System.IO.File]::WriteAllBytes($FilePath, $CertBytes)
 }
+
+You cannot call a method on a null-valued expression.
+At line:6 char:5
++     $CertBytes = $Certificate.Certificate.Export([System.Security.Cry ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Exception calling "Import" with "3" argument(s): "Array may not be empty or null.
+Parameter name: rawData"
+At line:8 char:5
++     $Cert.Import($CertBytes, $Password, [System.Security.Cryptography ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentException
+
+Exception calling "WriteAllBytes" with "2" argument(s): "Value cannot be null.
+Parameter name: bytes"
+At line:9 char:5
++     [System.IO.File]::WriteAllBytes($FilePath, $CertBytes)
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentNullException
+
+You cannot call a method on a null-valued expression.
+At line:6 char:5
++     $CertBytes = $Certificate.Certificate.Export([System.Security.Cry ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Exception calling "Import" with "3" argument(s): "Array may not be empty or null.
+Parameter name: rawData"
+At line:8 char:5
++     $Cert.Import($CertBytes, $Password, [System.Security.Cryptography ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentException
+
+Exception calling "WriteAllBytes" with "2" argument(s): "Value cannot be null.
+Parameter name: bytes"
+At line:9 char:5
++     [System.IO.File]::WriteAllBytes($FilePath, $CertBytes)
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentNullException
+
+You cannot call a method on a null-valued expression.
+At line:6 char:5
++     $CertBytes = $Certificate.Certificate.Export([System.Security.Cry ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Exception calling "Import" with "3" argument(s): "Array may not be empty or null.
+Parameter name: rawData"
+At line:8 char:5
++     $Cert.Import($CertBytes, $Password, [System.Security.Cryptography ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentException
+
+Exception calling "WriteAllBytes" with "2" argument(s): "Value cannot be null.
+Parameter name: bytes"
+At line:9 char:5
++     [System.IO.File]::WriteAllBytes($FilePath, $CertBytes)
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentNullException
+
+You cannot call a method on a null-valued expression.
+At line:6 char:5
++     $CertBytes = $Certificate.Certificate.Export([System.Security.Cry ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Exception calling "Import" with "3" argument(s): "Array may not be empty or null.
+Parameter name: rawData"
+At line:8 char:5
++     $Cert.Import($CertBytes, $Password, [System.Security.Cryptography ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentException
+
+Exception calling "WriteAllBytes" with "2" argument(s): "Value cannot be null.
+Parameter name: bytes"
+At line:9 char:5
++     [System.IO.File]::WriteAllBytes($FilePath, $CertBytes)
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentNullException
+
+You cannot call a method on a null-valued expression.
+At line:6 char:5
++     $CertBytes = $Certificate.Certificate.Export([System.Security.Cry ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Exception calling "Import" with "3" argument(s): "Array may not be empty or null.
+Parameter name: rawData"
+At line:8 char:5
++     $Cert.Import($CertBytes, $Password, [System.Security.Cryptography ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentException
+
+Exception calling "WriteAllBytes" with "2" argument(s): "Value cannot be null.
+Parameter name: bytes"
+At line:9 char:5
++     [System.IO.File]::WriteAllBytes($FilePath, $CertBytes)
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentNullException
+
+You cannot call a method on a null-valued expression.
+At line:6 char:5
++     $CertBytes = $Certificate.Certificate.Export([System.Security.Cry ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Exception calling "Import" with "3" argument(s): "Array may not be empty or null.
+Parameter name: rawData"
+At line:8 char:5
++     $Cert.Import($CertBytes, $Password, [System.Security.Cryptography ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentException
+
+Exception calling "WriteAllBytes" with "2" argument(s): "Value cannot be null.
+Parameter name: bytes"
+At line:9 char:5
++     [System.IO.File]::WriteAllBytes($FilePath, $CertBytes)
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentNullException
+
+You cannot call a method on a null-valued expression.
+At line:6 char:5
++     $CertBytes = $Certificate.Certificate.Export([System.Security.Cry ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Exception calling "Import" with "3" argument(s): "Array may not be empty or null.
+Parameter name: rawData"
+At line:8 char:5
++     $Cert.Import($CertBytes, $Password, [System.Security.Cryptography ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentException
+
+Exception calling "WriteAllBytes" with "2" argument(s): "Value cannot be null.
+Parameter name: bytes"
+At line:9 char:5
++     [System.IO.File]::WriteAllBytes($FilePath, $CertBytes)
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentNullException
+
+You cannot call a method on a null-valued expression.
+At line:6 char:5
++     $CertBytes = $Certificate.Certificate.Export([System.Security.Cry ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Exception calling "Import" with "3" argument(s): "Array may not be empty or null.
+Parameter name: rawData"
+At line:8 char:5
++     $Cert.Import($CertBytes, $Password, [System.Security.Cryptography ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentException
+
+Exception calling "WriteAllBytes" with "2" argument(s): "Value cannot be null.
+Parameter name: bytes"
+At line:9 char:5
++     [System.IO.File]::WriteAllBytes($FilePath, $CertBytes)
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentNullException
+
+You cannot call a method on a null-valued expression.
+At line:6 char:5
++     $CertBytes = $Certificate.Certificate.Export([System.Security.Cry ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Exception calling "Import" with "3" argument(s): "Array may not be empty or null.
+Parameter name: rawData"
+At line:8 char:5
++     $Cert.Import($CertBytes, $Password, [System.Security.Cryptography ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentException
+
+Exception calling "WriteAllBytes" with "2" argument(s): "Value cannot be null.
+Parameter name: bytes"
+At line:9 char:5
++     [System.IO.File]::WriteAllBytes($FilePath, $CertBytes)
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentNullException
+
+You cannot call a method on a null-valued expression.
+At line:6 char:5
++     $CertBytes = $Certificate.Certificate.Export([System.Security.Cry ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Exception calling "Import" with "3" argument(s): "Array may not be empty or null.
+Parameter name: rawData"
+At line:8 char:5
++     $Cert.Import($CertBytes, $Password, [System.Security.Cryptography ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentException
+
+Exception calling "WriteAllBytes" with "2" argument(s): "Value cannot be null.
+Parameter name: bytes"
+At line:9 char:5
++     [System.IO.File]::WriteAllBytes($FilePath, $CertBytes)
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentNullException
+
+You cannot call a method on a null-valued expression.
+At line:6 char:5
++     $CertBytes = $Certificate.Certificate.Export([System.Security.Cry ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Exception calling "Import" with "3" argument(s): "Array may not be empty or null.
+Parameter name: rawData"
+At line:8 char:5
++     $Cert.Import($CertBytes, $Password, [System.Security.Cryptography ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentException
+
+Exception calling "WriteAllBytes" with "2" argument(s): "Value cannot be null.
+Parameter name: bytes"
+At line:9 char:5
++     [System.IO.File]::WriteAllBytes($FilePath, $CertBytes)
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentNullException
+
+You cannot call a method on a null-valued expression.
+At line:6 char:5
++     $CertBytes = $Certificate.Certificate.Export([System.Security.Cry ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Exception calling "Import" with "3" argument(s): "Array may not be empty or null.
+Parameter name: rawData"
+At line:8 char:5
++     $Cert.Import($CertBytes, $Password, [System.Security.Cryptography ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentException
+
+Exception calling "WriteAllBytes" with "2" argument(s): "Value cannot be null.
+Parameter name: bytes"
+At line:9 char:5
++     [System.IO.File]::WriteAllBytes($FilePath, $CertBytes)
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentNullException
+
+You cannot call a method on a null-valued expression.
+At line:6 char:5
++     $CertBytes = $Certificate.Certificate.Export([System.Security.Cry ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Exception calling "Import" with "3" argument(s): "Array may not be empty or null.
+Parameter name: rawData"
+At line:8 char:5
++     $Cert.Import($CertBytes, $Password, [System.Security.Cryptography ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentException
+
+Exception calling "WriteAllBytes" with "2" argument(s): "Value cannot be null.
+Parameter name: bytes"
+At line:9 char:5
++     [System.IO.File]::WriteAllBytes($FilePath, $CertBytes)
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentNullException
+
+You cannot call a method on a null-valued expression.
+At line:6 char:5
++     $CertBytes = $Certificate.Certificate.Export([System.Security.Cry ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Exception calling "Import" with "3" argument(s): "Array may not be empty or null.
+Parameter name: rawData"
+At line:8 char:5
++     $Cert.Import($CertBytes, $Password, [System.Security.Cryptography ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentException
+
+Exception calling "WriteAllBytes" with "2" argument(s): "Value cannot be null.
+Parameter name: bytes"
+At line:9 char:5
++     [System.IO.File]::WriteAllBytes($FilePath, $CertBytes)
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : ArgumentNullException
