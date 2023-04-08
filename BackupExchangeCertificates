@@ -1,0 +1,11 @@
+$Certificates = Get-ExchangeCertificate
+$Password = Read-Host "Enter a password for the exported certificates" -AsSecureString
+ForEach ($Certificate in $Certificates) {
+    $Thumbprint = $Certificate.Thumbprint
+    $FilePath = "$env:userprofile\Desktop\Backups\Certificate-$Thumbprint.pfx"
+    Export-ExchangeCertificate -Thumbprint $Thumbprint -BinaryEncoded:$true -FileName $FilePath
+    $SecureString = ConvertTo-SecureString -String $($Password | ConvertFrom-SecureString) -AsPlainText -Force
+    $Cert = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2($FilePath)
+    $CertBytes = $Cert.Export([System.Security.Cryptography.X509Certificates.X509ContentType]::Pkcs12, $SecureString)
+    [System.IO.File]::WriteAllBytes($FilePath, $CertBytes)
+}
