@@ -14,17 +14,4 @@ ForEach ($Certificate in $Certificates) {
     [System.IO.File]::WriteAllBytes($FilePath, $CertBytes)
 }
 
-$Thumbprint = "FB1EAB8E7B1402F42CE40B84CFC60B8B7D63625D"
-$Password = ConvertTo-SecureString -String "MyPassword" -Force -AsPlainText
-$Certificate = Get-ChildItem -Path cert:\CurrentUser\My | Where-Object {$_.Thumbprint -eq $Thumbprint}
-
-if ($Certificate) {
-    $CertBytes = $Certificate.Certificate.Export([System.Security.Cryptography.X509Certificates.X509ContentType]::Pkcs12, $Password)
-    $Cert = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
-    $Cert.Import($CertBytes, $Password, [System.Security.Cryptography.X509Certificates.X509KeyStorageFlags]::Exportable)
-    $FilePath = "C:\Users\MyUser\Desktop\Certificate.pfx"
-    [System.IO.File]::WriteAllBytes($FilePath, $CertBytes)
-    Write-Host "Certificate exported successfully to: $FilePath"
-} else {
-    Write-Host "Certificate with thumbprint $Thumbprint not found in current user's certificate store."
-}
+Export-ExchangeCertificate -Thumbprint <CertificateThumbprint> -FilePath "<PathToExportFile>" -Password (Read-Host "Enter password" -AsSecureString)
